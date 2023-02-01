@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
   main_header: {
-    paddingVertical: 2,
+    margin: -3,
     marginBottom: 150,
   },
   home_wrapper: {
