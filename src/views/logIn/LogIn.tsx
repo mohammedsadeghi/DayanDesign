@@ -8,7 +8,7 @@ import RadioGroup from 'react-native-radio-buttons-group';
 
 const radioButtonsData = [
   {
-    id: '1', // acts as primary key, should be unique and non-empty string
+    id: '1',
     label: 'درمانگاه',
     value: '1',
     selected: false,
@@ -26,9 +26,8 @@ const LogIn = ({navigation}: any) => {
   const [radioButtons, setRadioButtons] = React.useState(radioButtonsData);
   React.useEffect(() => {
     radioButtonsData[0].selected = true;
-    setTimeout(() => {
-      setRadioButtons([...radioButtonsData]);
-    }, 1000);
+
+    setRadioButtons([...radioButtonsData]);
   }, []);
 
   function onPressRadioButton(radioButtonsArray: any) {
@@ -62,9 +61,9 @@ const LogIn = ({navigation}: any) => {
             </View>
           )}
           <HomeButton
-            text="       ورود     "
+            text="       ورود       "
             handleClick={() => {
-              navigation.navigate('Splash');
+              navigation.navigate('Patient');
             }}
           />
         </View>
