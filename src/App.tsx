@@ -4,12 +4,12 @@ import {Provider} from 'react-redux';
 import store from './store/Store';
 import Home from './views/home';
 
-const App: React.FC = () => {
+const App: React.FC = ({navigation}: any) => {
   return (
     <Provider store={store}>
       <SafeAreaView>
         <View>
-          <Home />
+          <Home nav={navigation} />
         </View>
       </SafeAreaView>
     </Provider>
