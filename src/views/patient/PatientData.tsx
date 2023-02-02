@@ -23,7 +23,6 @@ const radioButtonsData = [
   },
 ];
 const Patient = ({navigation}: any) => {
-  const [residentStatus, setResidentStatus] = React.useState('iranian');
   const [radioButtons, setRadioButtons] = React.useState(radioButtonsData);
 
   React.useEffect(() => {
@@ -57,7 +56,7 @@ const Patient = ({navigation}: any) => {
           <HomeButton
             text="دریافت اطلاعات بیمار"
             handleClick={() => {
-              navigation.navigate('');
+              navigation.navigate('Profile');
             }}
           />
         </View>

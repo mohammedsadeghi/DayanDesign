@@ -5,6 +5,7 @@ import Splash from '../views/splash';
 import {createStackNavigator} from 'react-navigation-stack';
 import LogIn from '../views/logIn/LogIn';
 import Patient from '../views/patient/PatientData';
+import Profile from '../views/profile/Profile';
 
 const Routes = createStackNavigator(
   {
@@ -12,6 +13,7 @@ const Routes = createStackNavigator(
     Main: {screen: App},
     LogIn: {screen: LogIn},
     Patient: {screen: Patient},
+    Profile: {screen: Profile},
   },
   {
     headerMode: 'none',
